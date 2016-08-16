@@ -1,0 +1,23 @@
+{
+  "name": "request_header_parser",
+  "version": "1.0.0",
+  "description": "returns IP address, language, and operating system for browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impomales/Request_Header_Parser.git"
+  },
+  "author": "Isaias Pomales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/impomales/Request_Header_Parser/issues"
+  },
+  "homepage": "https://github.com/impomales/Request_Header_Parser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
