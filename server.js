@@ -10,7 +10,13 @@ app.get('/', function(req, res) {
 })
 
 app.get('/button', function(req, res) {
-    res.end('clicked')
+    var regx = /\(([^)]+)\)/
+    var json = {
+        ip_address: req.headers['x-forwarded-for'],
+        language: req.headers['accept-language'].split(',')[0],
+        software: regx.exec(req.headers['user-agent'])[1]
+    }
+    res.json(json)
 })
 
 app.listen(process.env.PORT || 8080, function() {
